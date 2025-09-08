@@ -1,0 +1,309 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.manga-info {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(100, 171, 67);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 32px;
+    gap: 24px;
+}
+.cover-image {
+    width: 256px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.manga-info-content {
+    flex: 1;
+    min-width: 300px;
+    
+}
+.manga-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.info-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.info-tag {
+    padding: 4px 12px;
+    background: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+}
+.info-chapters {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+
+.info-chapters-card {
+    width: 20%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 16px 0px 16px 0px;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+.info-chapters-number {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #60a5fa;
+}
+.info-chapters-label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.manga-description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    overflow: hidden;
+}
+.btn-primary {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+}
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.chapters-section {
+    background: rgb(32, 130, 210);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.chapters-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    user-select: none;
+}
+.chapters-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.chapters-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.chapter-count {
+    flex-shrink: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.search-container {
+    position: relative;
+}
+.search-chapter {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px 12px 8px 40px;
+    color: white;
+    width: 100%;
+}
+.search-chapter::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.search-chapter:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #3b82f6;
+} 
+ .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.search-chapter::-webkit-outer-spin-button,
+.search-chapter::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.swap-outline, .grid-outline,.list-outline {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.swap-outline:hover, .grid-outline:hover, .list-outline:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.grid-outline{
+    display: none;
+}
+
+
+.chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+.chapter-item-card {
+    background: rgba(26, 192, 195, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: white;
+}
+.chapter-item-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(59, 246, 84, 0.5);
+    transform: translateY(-2px);
+}
+
+.chapters-list {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+.chapter-item-list {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chapter-item-list:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(59, 130, 246, 0.5);
+}
+
+/* .empty-state {
+    text-align: center;
+    padding: 48px 0;
+    display: none;
+}
+
+.empty-state p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
+}
+
+.empty-state small {
+    color: rgba(255, 255, 255, 0.5);
+} */
+
+
+@media (max-width: 768px) {
+    .chapters-header{
+        flex-direction: column;
+        
+    }
+    .chapters-title{
+        padding-bottom: 24px;
+        align-self: start;
+    }
+    .chapters-controls {
+        align-self: flex-end;
+    }
+}

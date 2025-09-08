@@ -1,0 +1,8 @@
+.read-comic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.read-comic img{
+    width: 50%;
+}

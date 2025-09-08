@@ -1,0 +1,143 @@
+.item-card {
+    background: #374151;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 250px;
+    min-width: 250px;
+}
+
+.item-card:hover {
+    transform: scale(1.05);
+}
+
+.item-image {
+    aspect-ratio: 3/4;
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    position: relative;
+    overflow: hidden;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-info {
+    padding: 15px;
+}
+
+.item-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.item-meta .chapter {
+    color: #fb923c;
+}
+
+.item-meta .time {
+    color: #9ca3af;
+}
+
+@media (max-width: 880px) {
+    .item-card {
+        min-width: 240px;
+        width: 240px;
+    }
+}
+
+@media (max-width: 830px) {
+    .item-card {
+        min-width: 210px;
+        width: 210px;
+    }
+}
+@media (max-width: 687px) {
+    .item-card {
+        min-width: 300px;
+        width: 300px;
+    }
+}
+@media (max-width: 650px) {
+    .item-card {
+        min-width: 280px;
+        width: 280px;
+    }
+}
+@media (max-width: 615px) {
+    .item-card {
+        min-width: 250px;
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .item-card {
+        min-width: 230px;
+        width: 230px;
+    }
+}
+
+@media (max-width: 520px) {
+    .item-card {
+        min-width: 220px;
+        width: 220px;
+    }
+}
+@media (max-width: 480px) {
+    .item-card {
+        min-width: 210px;
+        width: 210px;
+    }
+}
+
+@media (max-width: 465px) {
+    .item-card {
+        min-width: 200px;
+        width: 200px;
+    }
+}
+@media (max-width: 450px) {
+    .item-card {
+        min-width: 190px;
+        width: 190px;
+    }
+}
+@media (max-width: 430px) {
+    .item-card {
+        min-width: 180px;
+        width: 180px;
+    }
+}
+@media (max-width: 410px) {
+    .item-card {
+        min-width: 170px;
+        width: 170px;
+    }
+}
+@media (max-width: 390px) {
+    .item-card {
+        min-width: 160px;
+        width: 160px;
+    }
+}
+@media (max-width: 370px) {
+    .item-card {
+        min-width: 250px;
+        width: 250px;
+    }
+}
